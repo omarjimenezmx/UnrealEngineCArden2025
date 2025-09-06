@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/Source/CArden2025/CArden2025.Build.cs",
+		"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/Source/CArden2025.Target.cs",
+		"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/Source/CArden2025Editor.Target.cs"
+	],
+	"EngineVersion": "5.6.0"
+}

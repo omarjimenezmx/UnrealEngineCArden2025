@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CArden2025",
+			"Path": "../Source/CArden2025.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CArden2025Editor",
+			"Path": "../Source/CArden2025Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

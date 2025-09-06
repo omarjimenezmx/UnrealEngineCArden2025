@@ -1,0 +1,620 @@
+{
+	"folders": [
+		{
+			"name": "CArden2025",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/Users/Shared/Epic Games/UE_5.6"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off",
+		"terminal.integrated.env.mac": {
+			"PATH": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-arm64:${env:PATH}",
+			"DOTNET_ROOT": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-arm64",
+			"DOTNET_HOST_PATH": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-arm64/dotnet",
+			"DOTNET_MULTILEVEL_LOOKUP": "0",
+			"DOTNET_ROLL_FORWARD": "LatestMajor"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "CArden2025 Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"Debug",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"Debug",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CArden2025 Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"Debug",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"DebugGame",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"DebugGame",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CArden2025 Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"DebugGame",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"Development",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"Development",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CArden2025 Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"Development",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"Test",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"Test",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CArden2025 Mac Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"Test",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"Shipping",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"Shipping",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CArden2025 Mac Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025 Mac Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025",
+					"Mac",
+					"Shipping",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025Editor Mac Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025Editor",
+					"Mac",
+					"Debug",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025Editor Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025Editor",
+					"Mac",
+					"Debug",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CArden2025Editor Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025Editor Mac Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025Editor",
+					"Mac",
+					"Debug",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025Editor Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025Editor",
+					"Mac",
+					"DebugGame",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025Editor Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025Editor",
+					"Mac",
+					"DebugGame",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CArden2025Editor Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025Editor Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025Editor",
+					"Mac",
+					"DebugGame",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025Editor Mac Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025Editor",
+					"Mac",
+					"Development",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025Editor Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025Editor",
+					"Mac",
+					"Development",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"CArden2025Editor Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"label": "CArden2025Editor Mac Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+				"args": [
+					"CArden2025Editor",
+					"Mac",
+					"Development",
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch CArden2025 (Debug)",
+				"request": "launch",
+				"program": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/Binaries/Mac/UnrealGame-Mac-Debug.app/Contents/MacOS/UnrealGame-Mac-Debug",
+				"preLaunchTask": "CArden2025 Mac Debug Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/CArden2025": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch CArden2025 (DebugGame)",
+				"request": "launch",
+				"program": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/Binaries/Mac/UnrealGame-Mac-DebugGame.app/Contents/MacOS/UnrealGame-Mac-DebugGame",
+				"preLaunchTask": "CArden2025 Mac DebugGame Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/CArden2025": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch CArden2025 (Development)",
+				"request": "launch",
+				"program": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/Binaries/Mac/UnrealGame.app/Contents/MacOS/UnrealGame",
+				"preLaunchTask": "CArden2025 Mac Development Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/CArden2025": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch CArden2025 (Test)",
+				"request": "launch",
+				"program": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/Binaries/Mac/UnrealGame-Mac-Test.app/Contents/MacOS/UnrealGame-Mac-Test",
+				"preLaunchTask": "CArden2025 Mac Test Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/CArden2025": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch CArden2025 (Shipping)",
+				"request": "launch",
+				"program": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/Binaries/Mac/UnrealGame-Mac-Shipping.app/Contents/MacOS/UnrealGame-Mac-Shipping",
+				"preLaunchTask": "CArden2025 Mac Shipping Build",
+				"args": [
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/CArden2025": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch CArden2025Editor (Debug)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/Mac/UnrealEditor-Mac-Debug.app/Contents/MacOS/UnrealEditor-Mac-Debug",
+				"preLaunchTask": "CArden2025Editor Mac Debug Build",
+				"args": [
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/CArden2025": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch CArden2025Editor (DebugGame)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/Mac/UnrealEditor-Mac-DebugGame.app/Contents/MacOS/UnrealEditor-Mac-DebugGame",
+				"preLaunchTask": "CArden2025Editor Mac DebugGame Build",
+				"args": [
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/CArden2025": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Launch CArden2025Editor (Development)",
+				"request": "launch",
+				"program": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/Mac/UnrealEditor.app/Contents/MacOS/UnrealEditor",
+				"preLaunchTask": "CArden2025Editor Mac Development Build",
+				"args": [
+					"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject"
+				],
+				"cwd": "/Users/Shared/Epic Games/UE_5.6",
+				"type": "lldb",
+				"sourceFileMap": {
+					"/UEVFS/CArden2025": "/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025",
+					"/UEVFS/Root": "/Users/Shared/Epic Games/UE_5.6"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Mac Development Build",
+				"program": "/Users/Shared/Epic Games/UE_5.6/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/CArden2025.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"env": {
+					"PATH": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-arm64:${env:PATH}",
+					"DOTNET_ROOT": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-arm64",
+					"DOTNET_HOST_PATH": "/Users/Shared/Epic Games/UE_5.6/Engine/Binaries/ThirdParty/DotNet/8.0.300/mac-arm64/dotnet",
+					"DOTNET_MULTILEVEL_LOOKUP": "0",
+					"DOTNET_ROLL_FORWARD": "LatestMajor"
+				},
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/Users/Shared/Epic Games/UE_5.6"
+			}
+		]
+	}
+}
