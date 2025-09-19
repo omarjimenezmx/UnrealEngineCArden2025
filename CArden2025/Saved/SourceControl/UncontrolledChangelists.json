@@ -1,0 +1,14 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/4/Z6/A1RQU6PZVR1FMCRIMRPOLH.uasset",
+				"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/6/7H/JJBKSKJIIFX52UYK7L4QT3.uasset",
+				"/Users/omarjimenez/Desktop/UnrealEngineCArden2025/CArden2025/Content/__ExternalActors__/FirstPerson/Lvl_FirstPerson/0/5V/AEGKCE2XL93MVLMHCENT77.uasset"
+			]
+		}
+	]
+}
