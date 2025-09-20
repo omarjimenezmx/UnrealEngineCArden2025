@@ -19,8 +19,14 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	//ejemplo de una funcion publica
+	UFUNCTION(BlueprintCallable, Category = "MyActorTest")
+	void MyFunction();
 
 };
